@@ -1,0 +1,48 @@
+# Python cache dosyaları
+__pycache__/
+*.py[cod]
+*.so
+*.ipynb_checkpoints
+
+# Sanal ortam klasörü
+venv/
+
+
+# Checkpoint ve model ağırlıkları
+checkpoints/
+*.pt
+
+# Eğitim sonuçları ve görseller
+results/
+charts/
+loss_logs/
+*.png
+
+# Dataset ve geçici veriler
+data/
+!data/README.md  # 
+
+# Jupyter Notebook'lar
+*.ipynb
+
+# IDE / editör dosyaları
+.vscode/
+!.vscode/launch.json    
+.idea/
+*.swp
+
+# OS dosyaları
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+models/__pycache__
+
+
+# pip cache
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
