@@ -8,6 +8,8 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from models import efficientnet,vit
+os.environ["HSA_OVERRIDE_GFX_VERSION"] = "10.3.0"
 
 def evaluate_model(model, test_loader, device, num_classes):
     model.eval()
@@ -49,6 +51,11 @@ if __name__ == "__main__":
         model = resnet50_finetune.get_model(num_classes=args.num_classes)
     elif args.model == "vgg16":
         model = vgg16_finetune.get_model(num_classes=args.num_classes)
+    elif args.model == "efficientnet":
+        model = efficientnet.get_model(num_classes=args.num_classes)    
+    elif args.model == "vit":
+        _, test_loader = get_dataloaders("data/GTSRB", image_size=224)
+        model = vit.get_model(num_classes=args.num_classes)
     else:
         raise ValueError("Unknown model")
 

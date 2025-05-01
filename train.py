@@ -4,6 +4,7 @@ import torch.optim as optim
 from tqdm import tqdm
 import argparse
 from utils import get_dataloaders
+from models import efficientnet,vit
 import os
 os.environ["HSA_OVERRIDE_GFX_VERSION"] = "10.3.0"
 def train_model(model, train_loader, val_loader, num_epochs=10, lr=0.001, device='cpu', model_name="model"):
@@ -79,8 +80,12 @@ if __name__ == "__main__":
         model = resnet50_finetune.get_model()
     elif args.model == "vgg16":
         model = vgg16_finetune.get_model()
+    elif args.model == "efficientnet":
+        model = efficientnet.get_model()
+    elif args.model == "vit":
+        train_loader, test_loader = get_dataloaders("./data/GTSRB", image_size=224)
+        model= vit.get_model()
     else:
-        model = cnn_model.SimpleCNN()
-        #raise ValueError("Model not found!")
+        raise ValueError("Model not found!")
 
     train_model(model, train_loader, test_loader, num_epochs=10, device='cuda' if torch.cuda.is_available() else 'cpu',model_name=args.model)
