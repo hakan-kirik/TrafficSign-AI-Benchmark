@@ -1,4 +1,4 @@
-# 🚦 Trafik Levhası Tanıma Sistemi (GTSRB + PyTorch)
+# Trafik Levhası Tanıma Sistemi (GTSRB + PyTorch)
 
 Bu proje, Almanya trafik işaretleri veri seti (GTSRB) üzerinde çalışan, çeşitli derin öğrenme mimarilerini kullanarak trafik levhalarını tanımayı amaçlayan bir sistemdir.
 Hem özel olarak eğitilmiş CNN modelleri hem de transfer öğrenme yaklaşımları (ResNet50, VGG16, EfficientNet, ViT) ile performans karşılaştırması yapılmıştır.
@@ -118,7 +118,7 @@ Grafikler:
 <img src="charts/accuracy_comparison.png" width="50%"><img src="charts/f1_comparison.png" width="50%">
 ---
 
-## 🔗 Kaynaklar
+##  Kaynaklar
 
 - GTSRB: [Kaggle](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign)
 - ResNet: He et al. (2016)
@@ -127,13 +127,13 @@ Grafikler:
 
 ---
 
-## 👤 Geliştiren
+##  Geliştiren
 
 Bu proje, bilgisayar gormesi dersi icin model karşılaştırma sistemi olarak [Hakan KIRIK](https://github.com/hakan-kirik) tarafından geliştirilmiştir.
 
 ---
 
-## 🛡 Lisans
+## Lisans
 
 MIT Lisansı © 2025
 
