@@ -2,11 +2,11 @@ from timm import create_model
 import torch.nn as nn
 
 def get_model(num_classes=43, pretrained=True, finetune=False):
-    # Pretrained ViT modelini yükle
+    
     model = create_model(
         "vit_base_patch16_224",
         pretrained=pretrained,
-        num_classes=1000  # Başlangıçta ImageNet çıkışlı
+        num_classes=1000  
     )
 
     if not finetune:

@@ -91,11 +91,17 @@ python evaluate.py --model resnet50 --weight checkpoints/resnet50_best.pt
 
 ##  Sonuçlar (results/results.csv)
 
-| Model    | Accuracy | F1 Score |
-|----------|----------|----------|
-| CNN      | 94.21%   | 0.9418   |
-| ResNet50 | 97.20%   | 0.9725   |
-| VGG16    | 96.02%   | 0.9604   |
+| Model        | Doğruluk (%) | F1 Skoru (%) |
+| ------------ | ------------ | ------------ |
+| ResNet50 | 58.63        | 58.36        |
+| VGG16    | 31.59        | 31.15        |
+| ViT      | 71.50        | 71.84        |
+|  | Tam Ayar(Fine tuned) Sonuçları |
+| CNN          | 95.72        | 95.68        |
+| ResNet50     | 97.66        | 97.67        |
+| VGG16        | 98.72        | 98.72        |
+| EfficientNet | 98.33        | 98.31        |
+| ViT          | 99.49        | 99.49        |
 
 ---
 
@@ -108,7 +114,8 @@ python compare_results.py
 Grafikler:
 - `charts/accuracy_comparison.png`
 - `charts/f1_comparison.png`
-
+  
+<img src="charts/accuracy_comparison.png" width="50%"><img src="charts/f1_comparison.png" width="50%">
 ---
 
 ## 🔗 Kaynaklar
