@@ -1,0 +1,13 @@
+Model,Checkpoint,Accuracy,F1
+vgg16,vgg16_best.pt,0.5112,0.4966
+vit,vit_best.pt,0.7667,0.7608
+resnet50,resnet50_best.pt,0.5910,0.5937
+cnn,cnn_best.pt,0.9572,0.9568
+cnn,cnn_best.pt,0.9572,0.9568
+resnet50,resnet50_best.pt,0.5863,0.5836
+efficientnet,efficientnet_best.pt,0.9833,0.9831
+vgg16,vgg16_best.pt,0.3159,0.3115
+vit,vit_best.pt,0.7150,0.7184
+resnet50,resnet50_best.pt,0.9766,0.9767
+vgg16,vgg16_best.pt,0.9872,0.9872
+vit,vit_best.pt,0.9949,0.9949

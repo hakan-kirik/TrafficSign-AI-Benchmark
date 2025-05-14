@@ -13,10 +13,8 @@ checkpoints/
 *.pt
 
 # Eğitim sonuçları ve görseller
-results/
-charts/
+
 loss_logs/
-*.png
 
 # Dataset ve geçici veriler
 data/
